@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micol</title>
+
+    <link rel="stylesheet" href="reset.css">
+
+    <script src="https://kit.fontawesome.com/7311f15228.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/hamburgers.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row sticky-top border-bottom border-primary">
+            <div class="col-8">
+                <img id="logo" src="img/logoblu.png" alt="logobianco">
+            </div>
+
+            <div class="col-4">
+                <button id="toggle" class="hamburger hamburger--arrow" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+
+                <div id="menu" class="text-center">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row vh-100 d-flex align-items-center" id="intro">
+            <div class="col text-center">
+                <h1 class="display-1">Hi there, I'm Micol</h1> 
+                <h2 class="display-5">A multidisciplinary designer</h2>
+            </div>
+        </div>
+
+        <div class="row vh-100 d-flex align-items-center"  id="about">
+            <div class="col-6">
+                <h3 class="display-2">About me</h3>
+                <p>
+                    I am 23 years old, I was born in Parma, grew up in Noceto, and now I live in Brescia.
+                    In high school I attended the Liceo Artistico Paolo Toschi, in Parma, graduating in graphics in 2019. Then I enrolled in the Santa Giulia Academy in Brescia, graduating in graphics in 2022.
+                    Currently I'm studying Digital Design & Communication in Laba, Brescia, for my master degree. 
+                    <br><br>
+                    I’ve been passionate about graphics since middle school. 
+                    I am interested in everything related to <strong>Visual Design, Brand Design, Logo Design, Editorial Design, Web Design and AI.</strong>
+                    <br><br>
+                    Besides graphics, my other passions are cinema, photography, reading and horse riding.
+                    <br><br>
+                    I love nature, the sun and Lucio Battisti.
+                </p>
+            </div>
+            
+            <div class="col-6 d-flex justify-content-center">
+                <img src="img/me.png" alt="Micol's portrait">
+             </div>
+
+        </div>
+
+        <div class="row d-flex align-items-end" style="height:250px;">
+            <div class="col" id="titpro">
+                <h3 class="display-2">Projects</h3>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 g-4 pb-5">
+            <div class="col">
+                <div class="card">
+                    <img src="img/logonozey.png" class="card-img-top" alt="logo Collen'na de Nozey">
+                    <div class="card-body">
+                        <h5>Brand Design</h5>
+                        <p>This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="card">
+                    <img src="img/anna_luglio_4.jpg" class="card-img-top" alt="photography">
+                    <div class="card-body">
+                        <h5>Photography</h5>
+                        <p>This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="img/firsthingsfirst.png" class="card-img-top" alt="first things first">
+                    <div class="card-body">
+                        <h5>Editorial Design</h5>
+                        <p>This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="img/tesinterno.png" class="card-img-top" alt="Tesi">
+                    <div class="card-body">
+                        <h5>Effecrystal - Thesis</h5>
+                        <p>This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div  class="scrolling">
+                    <div class="message">*graphic design</div>
+                    <div class="message">*web design</div>
+                    <div class="message">*brand design</div>
+                    <div class="message">*art direction</div>
+                </div>
+            </div>
+        </div>
+
+        <!--inizio footer-->
+        
+        <div class="row d-flex align-items-center" style="height:200px" id="talk">
+            <div class="col">
+                <h2 class="display-3 text-center">Let's talk!</h2>
+            </div>
+        </div>
+
+        <form class="row d-flex justify-content-center" id="contact">
+            <div class="col-md-4 mb-4">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <label for="inputPassword4" class="form-label">Password</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+
+            <div class="col-md-8 mb-4">
+              <label for="inputAddress" class="form-label">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+
+            <div class="col-md-5 mb-4">
+              <label for="inputCity" class="form-label">City</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+
+            <div class="col-md-3 mb-4">
+              <label for="inputState" class="form-label">State</label>
+              <select id="inputState" class="form-select">
+                <option selected>Choose...</option>
+                <option>Italy</option>
+              </select>
+            </div>
+
+            <div class="col-md-8 mb-4">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+              </div>
+            </div>
+
+            <div class="col-md-8 mb-5">
+              <button type="submit" class="btn btn-outline-light">Sign in</button>
+            </div>
+        </form>
+
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-8 d-flex align-items-center justify-content-center">
+                <ul class="list-inline mt-3">
+                        <li class="list-inline-item"><a href="https://www.instagram.com/micol_benatti/" target="_blank"> <i class="fa-brands fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="@"> <i class="fa-brands fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/micol-benatti-100132199/" target="_blank"> <i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="module" src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
