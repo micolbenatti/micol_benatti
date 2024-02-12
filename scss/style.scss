@@ -7,30 +7,29 @@ $blue: #3a61ab;
 .row{
     background-color: $white;
     font-family: $p-font;
+    overflow: hidden;
 }
 
 #logo{
-    width: 12%;
+    width: 13%;
 }
 
 #toggle{
     transform: scale (1.5);
-    width: 100px;
-    height: 100px;
-    position: fixed;
-    top: 10px;
-    right: 30px;
     z-index: 1;
+    position: absolute;
+    float:right;
+    align-items: center;
+    margin-left: 45%;
 }
 
 #menu{
     background-color: $white;
     width: 100vw;
     height: 100vh;
-    position: fixed;
-    top: 0;
     right: -100vw;
     transition: all .3s;
+    position:fixed;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,11 +55,15 @@ $blue: #3a61ab;
     right: 0;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 960px) {
     #toggle{
         transform: scale(0.7);
-        top: -2.5%;
-        right: 10px;
+    }
+}
+
+@media (max-width: 720px) {
+    #toggle{
+        transform: scale(0.5);
     }
 }
 
@@ -70,7 +73,6 @@ $blue: #3a61ab;
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
-
     h1{
         font-weight:700;
         color: $blue;
@@ -117,7 +119,6 @@ $blue: #3a61ab;
 
 .scrolling {
     display: inline-block;
-    overflow: hidden;
     white-space: nowrap;
     display: inline-block;
     animation: scrolling 8s linear infinite;
