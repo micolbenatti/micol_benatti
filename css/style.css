@@ -5,7 +5,7 @@
 }
 
 #logo {
-  width: 13%;
+  width: 7%;
 }
 
 #toggle {
@@ -13,8 +13,8 @@
   z-index: 1;
   position: absolute;
   float: right;
-  align-items: center;
   margin-left: 45%;
+  width: 100%;
 }
 
 #menu {

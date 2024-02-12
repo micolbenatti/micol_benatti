@@ -11,16 +11,16 @@ $blue: #3a61ab;
 }
 
 #logo{
-    width: 13%;
+    width: 7%;
 }
 
 #toggle{
     transform: scale (1.5);
     z-index: 1;
     position: absolute;
-    float:right;
-    align-items: center;
-    margin-left: 45%;
+    float: right;
+    margin-left:45%;
+    width:100%;
 }
 
 #menu{
@@ -119,6 +119,7 @@ $blue: #3a61ab;
 
 .scrolling {
     display: inline-block;
+
     white-space: nowrap;
     display: inline-block;
     animation: scrolling 8s linear infinite;
