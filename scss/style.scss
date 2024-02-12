@@ -119,10 +119,9 @@ $blue: #3a61ab;
 
 .scrolling {
     display: inline-block;
-
     white-space: nowrap;
     display: inline-block;
-    animation: scrolling 8s linear infinite;
+    animation: scrolling 5s linear infinite;
     background-color: $s-color;
     color: $blue;
 }
@@ -139,7 +138,7 @@ $blue: #3a61ab;
   transform: translate3d(0, 0, 0);
   }
   100% {
-  transform: translate3d(-50%, 0, 0);
+  transform: translate3d(-42%, 0, 0);
   }
 }
 
