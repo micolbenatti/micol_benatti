@@ -18,12 +18,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row sticky-top border-bottom border-primary">
-            <div class="col">
+    <!--window:load-->
+    <div id="loading">
+        <img src="img/logobianco.png" alt="loading...">
+    </div>
+
+    <div class="container-fluid" id="content">
+        <div class="row sticky-top border-bottom border-primary align-items-center">
+            <div class="col-10">
                 <img id="logo" src="img/logoblu.png" alt="logobianco">
             </div>
 
+            <div class="col-2 d-flex justify-content-end">
                 <button id="toggle" class="hamburger hamburger--arrow" type="button">
                     <span class="hamburger-box">
                         <span class="hamburger-inner"></span>
@@ -38,8 +44,11 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
+            </div>
 
         </div>
+
+        <!--metti testo con animazione-->
 
         <div class="row vh-100 d-flex align-items-center" id="intro">
             <div class="col text-center">
@@ -182,10 +191,10 @@
         </form>
 
         <div class="row d-flex align-items-center justify-content-center">
-            <div class="col-8 d-flex align-items-center justify-content-center">
+            <div class="col d-flex align-items-center justify-content-center">
                 <ul class="list-inline mt-3">
                         <li class="list-inline-item"><a href="https://www.instagram.com/micol_benatti/" target="_blank"> <i class="fa-brands fa-instagram"></i></a></li>
-                        <li class="list-inline-item"><a href="@"> <i class="fa-brands fa-facebook"></i></a></li>
+                        <li class="list-inline-item px-2"><a href="@"> <i class="fa-brands fa-facebook"></i></a></li>
                         <li class="list-inline-item"><a href="https://www.linkedin.com/in/micol-benatti-100132199/" target="_blank"> <i class="fa-brands fa-linkedin"></i></a></li>
                 </ul>
             </div>
