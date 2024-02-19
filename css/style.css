@@ -2,6 +2,7 @@
 #loading {
   background-color: #3a61ab;
   height: 100vh;
+  width: 100%;
   position: fixed;
   display: flex;
   justify-content: center;
@@ -12,20 +13,20 @@
 #loading img {
   width: 20%;
   opacity: 0;
-  animation: fadeInOut 2s ease-in-out infinite;
+  animation: fade 2s ease-in-out infinite;
 }
 
-@keyframes fadeInOut {
+@keyframes fade {
   0% {
-    opacity: 0; /* opacità al 100% inizio*/
+    opacity: 0; /* opacità all' inizio*/
     transform: rotate(0deg);
   }
   50% {
-    opacity: 1; /* opacità al 50% a metà*/
+    opacity: 1; /* opacità a metà animazione*/
   }
   100% {
     transform: rotate(360deg);
-    opacity: 0; /* opacità al 100% fine*/
+    opacity: 0; /* opacità alla fine*/
   }
 }
 .row {
@@ -35,7 +36,10 @@
 }
 
 #logo {
-  width: 8%;
+  width: 9%;
+}
+#logo:hover {
+  opacity: 0.7;
 }
 
 #toggle {
@@ -49,7 +53,7 @@
   width: 100vw;
   height: 100vh;
   right: -100vw;
-  transition: all 0.3s;
+  transition: all 0.5s;
   position: fixed;
   display: flex;
   align-items: center;
@@ -80,13 +84,16 @@
     transform: scale(0.7);
   }
 }
-@media (max-width: 720px) {
+@media (max-width: 760px) {
   #toggle {
-    transform: scale(0.5);
+    transform: scale(0.6);
+  }
+  #menu ul li a {
+    font-size: 3em;
   }
 }
 #intro {
-  background-image: url("sfondo3.png");
+  background-image: url("../img/sfondo3.png");
   background-color: #f6f6f6;
   background-size: cover;
   background-position: right;
@@ -102,28 +109,44 @@
 
 #about {
   background-color: #3a61ab;
-  background-image: url("cerchi.png");
+  background-image: url("../img/cerchi.png");
   background-repeat: no-repeat;
   background-position: right;
 }
 #about h3 {
   font-weight: 700;
   color: #f6f6f6;
-  margin-left: 20px;
 }
 #about img {
   width: 80%;
 }
 #about p {
   color: #f6f6f6;
-  margin-left: 20px;
+  font-size: 1em;
+}
+
+.add-text {
+  display: none; /*nascondi testo*/
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  margin: 0 1em 1em 1em;
+}
+
+.show-add-text {
+  display: block; /*mostra il testo aggiuntivo quando la classe .show-add-text è presente*/
+  opacity: 1;
+}
+
+#read-more-btn {
+  font-size: 1.2em;
+}
+#read-more-btn:hover {
+  color: #3a61ab;
 }
 
 #titpro h3 {
   font-weight: 700;
   color: #3a61ab;
-  margin-left: 20px;
-  margin-bottom: 50px;
 }
 
 .card:hover {
@@ -143,9 +166,10 @@
   display: inline-block;
   white-space: nowrap;
   display: inline-block;
-  animation: scrolling 5s linear infinite;
+  animation: scrolling 10s linear infinite;
   background-color: rgb(253, 223, 0);
   color: #3a61ab;
+  padding: 0 5em 0 5em;
 }
 
 .message {
@@ -160,7 +184,12 @@
     transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translate3d(-42%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+@media (max-width: 760px) {
+  .message {
+    font-size: 4em;
   }
 }
 #talk {
@@ -174,8 +203,12 @@
 #contact {
   background-color: #3a61ab;
   color: #f6f6f6;
-  background-image: url("cerchi.png");
+  background-image: url("../img/cerchi.png");
   background-size: cover;
+}
+
+#btn-sign:hover {
+  color: #3a61ab;
 }
 
 i {

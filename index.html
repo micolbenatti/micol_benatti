@@ -26,7 +26,9 @@
     <div class="container-fluid" id="content">
         <div class="row sticky-top border-bottom border-primary align-items-center">
             <div class="col-10">
-                <img id="logo" src="img/logoblu.png" alt="logobianco">
+                <a href="index.html">
+                    <img id="logo" src="img/logoblu.png" alt="logobianco">
+                </a>
             </div>
 
             <div class="col-2 d-flex justify-content-end">
@@ -48,8 +50,6 @@
 
         </div>
 
-        <!--metti testo con animazione-->
-
         <div class="row vh-100 d-flex align-items-center" id="intro">
             <div class="col text-center">
                 <h1 class="display-1">Hi there, I'm Micol</h1> 
@@ -57,32 +57,38 @@
             </div>
         </div>
 
-        <div class="row vh-100 d-flex align-items-center"  id="about">
-            <div class="col-6">
-                <h3 class="display-2">About me</h3>
-                <p>
+        <div class="row d-flex align-items-center"  id="about">
+            <div class="col-md-6 my-5">
+                <h3 class="display-2 my-3 ms-3">About me</h3>
+                <p class="mx-3" id="text">
                     I am 23 years old, I was born in Parma, grew up in Noceto, and now I live in Brescia.
-                    In high school I attended the Liceo Artistico Paolo Toschi, in Parma, graduating in graphics in 2019. Then I enrolled in the Santa Giulia Academy in Brescia, graduating in graphics in 2022.
-                    Currently I'm studying Digital Design & Communication in Laba, Brescia, for my master degree. 
+                    In high school I attended the Liceo Artistico Paolo Toschi, in Parma, graduating in graphics in 2019. Then I went to the Santa Giulia Accademy in Brescia, from where I've graduated in Graphics in 2022.
+                    Now I'm studying Digital Design & Communication in Laba, Brescia, for my master degree. 
                     <br><br>
-                    I’ve been passionate about graphics since middle school. 
+                </p>
+                <p class="add-text">
+                    I’ve been passionate about graphic design since middle school. 
                     I am interested in everything related to <strong>Visual Design, Brand Design, Logo Design, Editorial Design, Web Design and AI.</strong>
                     <br><br>
                     Besides graphics, my other passions are cinema, photography, reading and horse riding.
                     <br><br>
                     I love nature, the sun and Lucio Battisti.
                 </p>
+                <button id="read-more-btn" class="btn btn-outline-light mx-3">Read more</button>
             </div>
+
+            <!--forzare l'a capo della colonna a md breakpoint
+            <div class="w-100 d-block d-md-none"></div>-->
             
-            <div class="col-6 d-flex justify-content-center">
-                <img src="img/me.png" alt="Micol's portrait">
+            <div class="col-md-6 d-flex justify-content-center my-5">
+                <img src="img/micol.png" alt="Micol">
              </div>
 
         </div>
 
-        <div class="row d-flex align-items-end" style="height:250px;">
-            <div class="col" id="titpro">
-                <h3 class="display-2">Projects</h3>
+        <div class="row d-flex align-items-end">
+            <div class="col my-5 ms-3" id="titpro">
+                <h3 class="display-2 mt-5">Projects</h3>
             </div>
         </div>
 
@@ -92,7 +98,9 @@
                     <img src="img/logonozey.png" class="card-img-top" alt="logo Collen'na de Nozey">
                     <div class="card-body">
                         <h5>Brand Design</h5>
-                        <p>This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                        <p>Brand Design is the process of creating the visual elements and assets 
+                            that represent a brand's identity. 
+                        </p>
                     </div>
                 </div>
             </div>
@@ -102,7 +110,9 @@
                     <img src="img/anna_luglio_4.jpg" class="card-img-top" alt="photography">
                     <div class="card-body">
                         <h5>Photography</h5>
-                        <p>This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                        <p>Doing it for fun, but maybe in future it could became a job for me. 
+                            I'm proud of the achievements, but the road is still long.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -112,7 +122,9 @@
                     <img src="img/firsthingsfirst.png" class="card-img-top" alt="first things first">
                     <div class="card-body">
                         <h5>Editorial Design</h5>
-                        <p>This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                        <p>I love reading books as much as I like watching a books. Do not judge a book by its cover, 
+                            but you know, I'm a graphic designer...
+                        </p>
                     </div>
                 </div>
             </div>
@@ -122,7 +134,9 @@
                     <img src="img/tesinterno.png" class="card-img-top" alt="Tesi">
                     <div class="card-body">
                         <h5>Effecrystal - Thesis</h5>
-                        <p>This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                        <p>In this thesis I analyzed the importance of the restyling for a brand, 
+                            proving it by doing it on a real brand, Effecrystal.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -135,15 +149,19 @@
                     <div class="message">*web design</div>
                     <div class="message">*brand design</div>
                     <div class="message">*art direction</div>
+                    <div class="message">*graphic design</div>
+                    <div class="message">*web design</div>
+                    <div class="message">*brand design</div>
+                    <div class="message">*art direction</div>
                 </div>
             </div>
         </div>
 
         <!--inizio footer-->
         
-        <div class="row d-flex align-items-center" style="height:200px" id="talk">
-            <div class="col">
-                <h2 class="display-3 text-center">Let's talk!</h2>
+        <div class="row d-flex align-items-center" id="talk">
+            <div class="col my-5">
+                <h2 class="display-3 text-center mt-5">Let's talk!</h2>
             </div>
         </div>
 
@@ -160,7 +178,7 @@
 
             <div class="col-md-8 mb-4">
               <label for="inputAddress" class="form-label">Address</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+              <input type="text" class="form-control" id="inputAddress">
             </div>
 
             <div class="col-md-5 mb-4">
@@ -168,7 +186,7 @@
               <input type="text" class="form-control" id="inputCity">
             </div>
 
-            <div class="col-md-3 mb-4">
+            <div class="col-md-3 mb-5">
               <label for="inputState" class="form-label">State</label>
               <select id="inputState" class="form-select">
                 <option selected>Choose...</option>
@@ -176,6 +194,7 @@
               </select>
             </div>
 
+            <!--
             <div class="col-md-8 mb-4">
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="gridCheck">
@@ -184,18 +203,31 @@
                 </label>
               </div>
             </div>
+            -->
 
             <div class="col-md-8 mb-5">
-              <button type="submit" class="btn btn-outline-light">Sign in</button>
+              <button id="btn-sign" type="submit" class="btn btn-outline-light mb-5">Sign in</button>
             </div>
         </form>
 
         <div class="row d-flex align-items-center justify-content-center">
             <div class="col d-flex align-items-center justify-content-center">
                 <ul class="list-inline mt-3">
-                        <li class="list-inline-item"><a href="https://www.instagram.com/micol_benatti/" target="_blank"> <i class="fa-brands fa-instagram"></i></a></li>
-                        <li class="list-inline-item px-2"><a href="@"> <i class="fa-brands fa-facebook"></i></a></li>
-                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/micol-benatti-100132199/" target="_blank"> <i class="fa-brands fa-linkedin"></i></a></li>
+                        <li class="list-inline-item">
+                            <a href="https://www.instagram.com/micol_benatti/" target="_blank"> 
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item px-2">
+                            <a href="https://github.com/dashboard" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/in/micol-benatti-100132199/" target="_blank">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
                 </ul>
             </div>
         </div>
