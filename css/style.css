@@ -171,8 +171,7 @@
   color: #3a61ab;
   padding: 0 5em 0 5em;
 }
-
-.message {
+.scrolling .message {
   font-size: 5em;
   font-weight: bold;
   white-space: nowrap;

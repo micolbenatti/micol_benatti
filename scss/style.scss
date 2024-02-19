@@ -174,15 +174,15 @@ $blue: #3a61ab;
     animation: scrolling 10s linear infinite;
     background-color: $s-color;
     color: $blue;
-    padding: 0 5em 0 5em;
+    padding: 0 5em 0 5em; 
+    .message{
+        font-size: 5em;
+        font-weight: bold; 
+        white-space: nowrap;
+        display: inline-block;
 }
-  
-.message{
-    font-size: 5em;
-    font-weight: bold; 
-    white-space: nowrap;
-    display: inline-block;
 }
+
   
 @keyframes scrolling {
   0% {

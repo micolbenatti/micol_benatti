@@ -1,3 +1,7 @@
+var nome = "Micol";
+var eta = 23;
+console.log (nome + " " + eta);
+
 const menu = document.querySelector('#menu')
 const toggle = document.querySelector('#toggle')
 
