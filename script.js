@@ -9,10 +9,10 @@ const toggleMenu = () => {
     toggle.classList.toggle('is-active')
     menu.classList.toggle('active')
 }
-
 document.addEventListener('DOMContentLoaded', () => {
     toggle.addEventListener('click', toggleMenu)
-})
+});
+
 
 //window load
 window.onload = () => {
@@ -24,32 +24,17 @@ window.onload = () => {
         content.style.opacity = 1;
         console.log("loaded");
     };
-    setTimeout(hideLoading, 2000);
+    setTimeout(hideLoading, 2000); //la funzione hideLoading viene eseguita dopo 2s
 };
 
-/*/read more ma con doppio click, per verificare display
-document.getElementById('read-more-btn').addEventListener('click', () =>{
-    const addText = document.getElementById('add-text');
-    const readMoreBtn = document.getElementById('read-more-btn');
 
-    if(addText.style.display === 'none') {
-        addText.style.display = 'block';
-        readMoreBtn.textContent = 'Nascondi';
-    }
-    else{
-        addText.style.display = 'none';
-        readMoreBtn.textContent = 'Read more';
-    }
-});
-*/
-
-//read more con aggiunta di classe in css per evitare doppio click
+//read more con aggiunta di classe in css
 const readMoreBtn = document.getElementById('read-more-btn');
-const addText = document.getElementsByClassName('add-text')[0];
+const addText = document.getElementsByClassName('add-text')[0]; //seleziona il primo elemento con classe add-text
 
 readMoreBtn.addEventListener('click', () => {
     addText.classList.toggle('show-add-text'); // Aggiungi o rimuovi la classe per mostrare o nascondere il testo aggiuntivo
-    if (readMoreBtn.textContent === 'Read more') {
+    if (readMoreBtn.textContent === 'Read more') { // operatore di uguaglianza, uguali per valore e per tipo
         readMoreBtn.textContent = 'Read less';
     } else {
         readMoreBtn.textContent = 'Read more';
